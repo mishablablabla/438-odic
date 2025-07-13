@@ -1,0 +1,12 @@
+<div class="auth-container">
+  <div class="buttons">
+    <button (click)="login()">Login</button>
+    <button (click)="logout()">Logout</button>
+  </div>
+
+  @if (token()) {
+  <div class="token-box">
+    <p>Access Token: {{ token() }}</p>
+  </div>
+  }
+</div>
