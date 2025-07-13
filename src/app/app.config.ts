@@ -55,7 +55,7 @@ export const appConfig: ApplicationConfig = {
 
     {
       provide: OAuthStorage,
-      useValue: localStorage,
+      useValue: sessionStorage,
     },
     {
       provide: APP_INITIALIZER,
